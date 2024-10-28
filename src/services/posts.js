@@ -54,15 +54,15 @@ export function updatePostBody(id, body) {
 
 export function updatePost(id, post) {
   //update post title and or body (imagine a form where user is allowed to edit both title and post but may also choose to only edit one of them)
-  posts = posts.map((orig) => {
-    if (orig.id === id) {
+  posts = posts.map((oldPost) => {
+    if (oldPost.id === id) {
       return {
-        ...orig,
+        ...oldPost,
         ...(post.title && { title: post.title }),
         ...(post.body && { body: post.body }),
       };
     }
-    return post;
+    return oldPost;
   });
 }
 
