@@ -24,6 +24,7 @@ import {getCommentById, getCommentsByPostId, updateCommentBody, deleteCommentByI
   };
 
   addUser(newUser);
+  console.log("get all users: ", getAllUsers());
   
    // POSTS LOGS
    
@@ -73,6 +74,7 @@ import {getCommentById, getCommentsByPostId, updateCommentBody, deleteCommentByI
      body: "Body 9999",
    };
    addPost(newPost);
+   console.log("All posts: ", getPosts());
 
 
   // COMMENTS LOGS
