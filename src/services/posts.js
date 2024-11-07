@@ -68,7 +68,7 @@ export function updatePost(id, post) {
 
 export function deletePostBy(id) {
   //delete post by id
-  return posts.filter((post) => post.id !== id);
+  posts = posts.filter((post) => post.id !== id);
 }
 
 export function deletePostsByUserId(userId) {

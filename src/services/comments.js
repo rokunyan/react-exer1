@@ -16,7 +16,7 @@ export function getCommentsByPostId(postId) {
 
 export function updateCommentBody(id, body) {
   //update comment body
-  return comments.map((comment) => {
+  comments= comments.map((comment) => {
     if(comment.id === id){
       return {...comment, body};
     }
@@ -26,7 +26,7 @@ export function updateCommentBody(id, body) {
 
 export function deleteCommentById(id) {
   //delete comment by id
-  return comments.filter((comment) => comment.id !== id);
+  comments= comments.filter((comment) => comment.id !== id);
 }
 
 export function addComment(comment) {
